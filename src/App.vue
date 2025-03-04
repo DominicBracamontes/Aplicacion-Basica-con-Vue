@@ -1,7 +1,26 @@
 <template>
   <v-app class="white-background">
     <AppHeader />
-    <TarjetaConImagen />
+
+    <v-container>
+      <v-row>
+        <v-col cols="12" md="6">
+          <TarjetaConImagen 
+            titulo="HOTELES" 
+            descripcion="Hoteles 5 estrellas" 
+            imagen="https://picsum.photos/500/300" 
+          />
+        </v-col>
+        <v-col cols="12" md="6">
+          <TarjetaConImagen 
+            titulo="RESTAURANTES" 
+            descripcion="Restaurantes 5 estrellas" 
+            imagen="https://picsum.photos/501/300" 
+          />
+        </v-col>
+      </v-row>
+    </v-container>
+
     <TablaDeDatos />
     <AppFooter />
   </v-app>
